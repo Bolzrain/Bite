@@ -28,35 +28,39 @@ const Cart = () => {
                   <p>${item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
-                  <p onClick={()=>removeFromCart(item._id)} className='cross'>x</p>
+                  <p onClick={() => removeFromCart(item._id)} className='cross'>
+                    x
+                  </p>
                 </div>
                 <hr />
               </div>
-            )
+            );
           }
         })}
       </div>
+      
       <div className="cart-bottom">
-        <div className="cart-total">
-          <h2>Cart Total</h2>
-          <div>
-            <div className="cart-total-details">
-              <p>SubTotal</p>
-              <p>{0}</p>
+          <div className="cart-total">
+            <h2>Cart Total</h2>
+            <div>
+              <div className="cart-total-details">
+                  <p>Sub Total</p>
+                  <p>{0}</p>
+              </div>
+              <hr />
+              <div className="cart-total-details">
+                  <p>Delivery Fee</p>
+                  <p>{2}</p>
+              </div>
+              <hr />
+              <div className="cart-total-details">
+                  <b>Total</b>
+                  <b>{0}</b>
+              </div>
             </div>
-            <hr />
-            <div className="cart-total-details">
-              <p>Delivery Fee</p>
-              <p>{2}</p>
-            </div>
-            <hr />
-            <div className="cart-total-details">
-              <b>Total</b>
-              <b>{0}</b>
-            </div>
-            <button>Proceed To Checkout</button>
+            <button>Proceed to checkout</button>
           </div>
-          <div className="cart-promo-code">
+          <div className="cart-promocode">
             <div>
               <p>If you have a promo code, enter it here.</p>
               <div className="cart-promocode-input">
@@ -65,7 +69,6 @@ const Cart = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
