@@ -10,19 +10,16 @@
     margin-top: 100px;
 }
 .footer-content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 .footer-content-left , 
 .footer-content-right ,
 .footer-content-center {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    flex: 1;
 } 
 .footer-content-left li, 
 .footer-content-right li,
@@ -40,6 +37,7 @@
 .footer-social-icons img{
     width: 40px;
     margin-right: 15px;
+    margin-top: 20px;
 }
 .footer hr{
     width: 100%;

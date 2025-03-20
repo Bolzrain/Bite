@@ -7,8 +7,8 @@ const Footer = () => {
     <div className='footer'id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam accusamus provident consequatur voluptatem dolores incidunt, voluptates quasi? Numquam, vel ratione. Odio id optio vitae voluptatum amet quis cupiditate error!</p>
+            <img src={assets.logo} alt="" style={{ width: "120px", height: "auto" }} />
+            <p>Delicious meals, delivered to your doorstep! At Bite, we bring you a wide variety of cuisines from your favorite restaurants, ensuring fresh and fast deliveries every time. Whether you're craving a quick bite or a gourmet feast, we've got you covered. Enjoy seamless ordering, secure payments, and real-time tracking for a hassle-free experience. Your satisfaction is our priority, and we’re here to serve you 24/7. Order now and savor the taste of convenience!</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
